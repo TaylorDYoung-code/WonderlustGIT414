@@ -109,7 +109,8 @@
                         srcset=" images/max-winter-L.png
                         images/max-winter-S.png 404w,
                         images/max-winter-M.png 920w,
-                        images/max-winter-L.png 1280w">
+                        images/max-winter-L.png 1280w"
+                        sizes="">
                         <div>
                         <h3>Max Winter</h3>
                         <dl>
@@ -217,20 +218,20 @@
           <h2>Contact Us <span id="required">(*required)</span></h2>
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="first-name">First Name<span>*</span></label>
+                    <input id="first-name" type="text" autocomplete="first-name" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input id="last-name" type="text" autocomplete="last-name" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email" autocomplete="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="tel" type="tel" autocomplete="tel" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
@@ -244,30 +245,28 @@
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
                     <select id="select-destination" name="select">
-                        <option>Choose</option>
-                        <option>Barcelona</option>
-                        <option>Granada</option>
-                        <option>Ibiza</option>
-                        <option>Madrid</option>
-                        <option>Majorca</option>
-                        <option>Seville</option>
-                        <option>Tenerife</option>
-                        <option>Valencia</option>
-                        <option>Other</option>
+                        <option value="1">Barcelona</option>
+                        <option value="2">Granada</option>
+                        <option value="3">Ibiza</option>
+                        <option value="4">Madrid</option>
+                        <option value="5">Majorca</option>
+                        <option value="6">Seville</option>
+                        <option value="7">Tenerife</option>
+                        <option value="8">Valencia</option>
+                        <option value="9">Other</option>
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
                     <select id="select-travel-time">
-                        <option>Choose</option>
-                        <option>Fall</option>
-                        <option>Winter</option>
-                        <option>Spring</option>
-                        <option>Summer</option>
-                        <option>Flexible</option>
+                        <option value="1">Fall</option>
+                        <option value="2">Winter</option>
+                        <option value="3">Spring</option>
+                        <option value="4">Summer</option>
+                        <option value="5">Flexible</option>
                     </select>
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit" required>
                 </section>
         <section id="legal">
           <h3>Legal</h3>
