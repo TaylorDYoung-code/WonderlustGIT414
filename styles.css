@@ -274,6 +274,7 @@ label, input, legend, select {
 }
 .sr-only:focus {
     transform: translateX(0%);
+     overflow: hidden;
 }
 footer {
     background-color: var(--deep-navy);
