@@ -267,14 +267,12 @@ label, input, legend, select {
     background: var(--sunset-orange);
     height: 1rem;
     padding: 1.5rem;
-    overflow: hidden;
     position: absolute;
     transform: translateX(-250%);
     transition: transform 0.3s;
 }
 .sr-only:focus {
     transform: translateX(0%);
-     overflow: hidden;
 }
 footer {
     background-color: var(--deep-navy);
@@ -344,22 +342,6 @@ input[type="radio"]:checked::before {
 #submit:hover {
     background-color: var(--deep-navy);
     color: var(--sunset-orange);
-}
-#skip a
-{
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
-}
- 
-#skip a:focus
-{
-position:static;
-width:auto;
-height:auto;
 }
 /* TEXT STYES */
 h1, h2, h3, #home {
